@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Serena FASHIONBLOG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="https://weibo.com/u/7942524104" class="w3-bar-item w3-button" target="_blank">
+      <i class="fa fa-weibo"></i>
+  </a>
+  <a href="https://46k8vk28h1cx7mdvb180oo3bsivxxen.world.taobao.com/shop/view_shop.htm?appUid=RAzN8HWQaEtZAyAD9PNB4G8CXGPaYV7juV74VzMEqFYXGQPkacr&spm=a21n57.1.hoverItem.2" class="w3-bar-item w3-button" target="_blank">
+      <i class="fa fa-shopping-bag"></i>
+  </a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-48 w3-white">
+  <h1 class="w3-xxxlarge" style="font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 1px;"><b>MAISON FILGOOD</b></h1>
+    <h6 style="font-family: 'Raleway', sans-serif;">Refresh your wardrobe.</h6>
+  </header>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Image header -->
+    <header class="w3-display-container w3-wide" id="home">
+      <img class="w3-image" src="Simages/s0.jpg" alt="Fashion Blog" width="1600" height="1060">
+      <div class="w3-display-left w3-padding-large">
+        <h1 class="w3-jumbo w3-text-white w3-hide-small" style="font-family: 'Montserrat', sans-serif; letter-spacing: 3px;"><b>WHENEVER, WHEREVER, WHATEVER, FILGood.</b></h1>
+        <h6>
+          <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" 
+                  style="font-family: 'Montserrat', sans-serif;"
+                  onclick="document.getElementById('subscribe').style.display='block'">
+            SUBSCRIBE
+          </button>
+        </h6>
+      </div>
+    </header>
+
+  <!-- Grid -->
+<div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+            <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">NEW LAUNCH</h3>
+            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 500;">25AW</h5>
+        </div>
+  
+        <div class="w3-justify">
+            <img src="Simages/s1.jpg" alt="25AW Collection" style="width:100%" class="w3-padding-16">
+            <p style="font-family: 'Raleway', sans-serif;">
+              <strong style="font-family: 'Montserrat', sans-serif;">FILGood 25AW "RAW SILHOUETTE" Collection</strong><br>
+              <em style="font-family: 'Raleway', sans-serif;">By Stylist Fil Xiaobai</em><br><br>
+              Stripping away all redundancy, returning to clothing's essence. The FILGood 2025 Autumn/Winter collection takes "Unfinished Completion" as its theme, deconstructing traditional uniform language through precision-cut wool and heavyweight cotton foundations.<br><br>
+              The signature asymmetric single-pleat trousers continue the architectural tailoring, with deliberately unfinished thread ends at the back waist becoming the collection's signature detail. Newly developed concrete gray dyeing technology allows coats to exhibit dynamic wrinkles in static poses. This season's debut 3D-knit dress outlines the golden ratio of the human body through singular lines.<br><br>
+              <blockquote style="font-family: 'Raleway', sans-serif; font-style: italic; border-left: 4px solid #ccc; padding-left: 12px; margin-left: 0;">
+                "True minimalism isn't about subtraction,<br>
+                but absolute mastery of essential elements"<br>
+                — Fil Xiaobai
+              </blockquote>
+              The 23-piece collection will debut on September 1st at the concept store on Yuyuan Road, Shanghai, accompanied by an immersive knot installation art exhibition.
+            </p>
+          
+          <!-- Buttons -->
+          <p class="w3-left" style="font-family: 'Montserrat', sans-serif;">
+            <button class="w3-button w3-white w3-border" onclick="likeFunction(this)">
+              <b><i class="fa fa-thumbs-up"></i> Like</b>
+            </button>
+          </p>
+          <p class="w3-right" style="font-family: 'Montserrat', sans-serif;">
+            <button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn">
+              <b>Replies</b> <span class="w3-tag w3-white">1</span>
+            </button>
+          </p>
+          
+          <p class="w3-clear"></p>
+          
+          <!-- Comment Section -->
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none; font-family: 'Raleway', sans-serif;">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="Simages/s3.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4 style="font-family: 'Montserrat', sans-serif;">Melody <span class="w3-opacity w3-medium">December 3, 2025, 6:32 PM</span></h4>
+                <p>Look forward to Xiao Bai's work！</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+<!-- Blog entry -->
+<div class="w3-container w3-white w3-margin w3-padding-large">
+    <div class="w3-center">
+      <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">CAPSULE COLLECTION</h3>
+      <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 500;">25SS 24AW <span style="font-family: 'Montserrat', sans-serif; opacity: 0.6;">April 23, 2024</span></h5>
+    </div>
+  
+    <div class="w3-justify">
+      <img src="Simages/S4.jpg" alt="FILGood Capsule Collection" style="width:100%" class="w3-padding-16">
+      <p style="font-family: 'Raleway', sans-serif;">
+        <strong style="font-family: 'Montserrat', sans-serif;">FILGood "ESSENTIAL ARCHITECTURE" Capsule</strong><br>
+        <em style="font-family: 'Raleway', sans-serif;">Curated by Stylist Fil Xiaobai</em><br><br>
+        
+        The FILGood 25SS/24AW capsule collection distills urban sophistication into 12 genderless silhouettes. Featuring Japanese technical fabric with organic cotton blends, each piece embodies the brand's philosophy of "wearable architecture."<br><br>
+        
+        Standouts include the convertible trench with hidden magnetic closures and the zero-waste draped top that transforms through strategic knotting. The monochromatic palette - cement grey, oxidized silver, and chalk white - reflects FILGood's signature industrial minimalism.<br><br>
+        
+        <blockquote style="font-family: 'Raleway', sans-serif; font-style: italic; border-left: 4px solid #ccc; padding-left: 12px; margin-left: 0;">
+          "A capsule should be like a good algorithm - <br>
+          maximum function with minimum elements"<br>
+          — Fil Xiaobai
+        </blockquote>
+        
+        Available exclusively at Dover Street Market locations from April 30th, with select pieces featured in the brand's Shanghai flagship installation.
+      </p>
+      
+      <p class="w3-left" style="font-family: 'Montserrat', sans-serif;">
+        <button class="w3-button w3-white w3-border" onclick="likeFunction(this)">
+          <b><i class="fa fa-thumbs-up"></i> Like</b>
+        </button>
+      </p>
+      <p class="w3-right" style="font-family: 'Montserrat', sans-serif;">
+        <button class="w3-button w3-black" onclick="myFunction('demo2')">
+          <b>Replies</b> <span class="w3-tag w3-white">2</span>
+        </button>
+      </p>
+      <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none; font-family: 'Raleway', sans-serif;">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="Simages/s5.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Amber 
+                  <span style="font-family: 'Raleway', sans-serif;" class="w3-opacity w3-medium">January 26, 2025, 10:52 PM</span>
+                </h4>
+                <p>Where can I buy it?</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="Simages/s6.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Angie 
+                  <span style="font-family: 'Raleway', sans-serif;" class="w3-opacity w3-medium">February 23, 2025, 9:12 PM</span>
+                </h4>
+                <p>It's an unavailable fashion item in my wardrobe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="Simages/s7.jpg" alt="Fil Xiaobai" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.5px;">FIL XIAOBAI</h4>
+          <p style="font-family: 'Raleway', sans-serif; line-height: 1.6;">
+            As the creative force behind FILGood, I bridge Shanghai's urban energy with minimalist philosophy. 
+            Trained at Central Saint Martins and former Vogue China stylist, my work redefines modern Chinese 
+            aesthetics through architectural tailoring.<br><br>
+            
+            FILGood embodies "essentialist design" - each piece is developed through 37 iterations minimum, 
+            using sustainable tech fabrics and traditional Jiangnan silk. The 2025 collection features 
+            zero-waste pattern cutting and magnetic closure systems.<br><br>
+            
+            <em>"True style isn't worn, it's inhabited."</em><br><br>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <ul class="w3-ul w3-hoverable w3-white">
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4 style="font-family: 'Montserrat', sans-serif;">HERO PRODUCTS</h4>
+          </div>
+        <!-- 第一个产品项 -->
+        <li class="w3-padding-16">
+          <a href="https://item.taobao.com/item.htm?id=886467764437&spm=a21xtw.29178619.product_shelf.1.da1ab0222qBRqJ" 
+             class="w3-hover-light-grey" 
+             style="text-decoration: none; display: block; padding: 16px; cursor: pointer;">
+            <img src="Simages/s8.png" alt="Zip Sweater Jacket" 
+                 class="w3-left w3-margin-right" 
+                 style="width:50px">
+            <span class="w3-large" 
+                  style="font-family: 'Raleway', sans-serif; font-weight: 600;">
+              Zip Sweater Jacket
+            </span>
+            <br>
+            <span style="font-family: 'Raleway', sans-serif;">
+              Black / Gray
+            </span>
+          </a>
+        </li>
+      
+        <!-- 第二个产品项 -->
+        <li class="w3-padding-16">
+          <a href="https://item.taobao.com/item.htm?id=886455653538&sku_properties=1627207%3A28341&spm=a21xtw.29178619.product_shelf.3.da1ab0222qBRqJ" 
+             class="w3-hover-light-grey" 
+             style="text-decoration: none; display: block; padding: 16px; cursor: pointer;">
+            <img src="Simages/s9.png" alt="Loose Jeans" 
+                 class="w3-left w3-margin-right" 
+                 style="width:50px">
+            <span class="w3-large" 
+                  style="font-family: 'Raleway', sans-serif; font-weight: 600;">
+              Loose Jeans
+            </span>
+            <br>
+            <span style="font-family: 'Raleway', sans-serif;">
+              Black
+            </span>
+          </a>
+        </li>
+      
+        <!-- 第三个产品项 -->
+        <li class="w3-padding-16">
+          <a href="https://item.taobao.com/item.htm?abbucket=1&id=900645960426&ns=1&priceTId=2100c80217429644737291648e0c77&skuId=5754885472042&spm=a21n57.1.hoverItem.6&utparam=%7B%22aplus_abtest%22%3A%22c8f93c43e270df36d046e7695f570e7a%22%7D&xxc=taobaoSearch" 
+             class="w3-hover-light-grey" 
+             style="text-decoration: none; display: block; padding: 16px; cursor: pointer;">
+            <img src="Simages/s10.png" alt="I-shaped Vest" 
+                 class="w3-left w3-margin-right" 
+                 style="width:50px">
+            <span class="w3-large" 
+                  style="font-family: 'Raleway', sans-serif; font-weight: 600;">
+              I-shaped Vest
+            </span>
+            <br>
+            <span style="font-family: 'Raleway', sans-serif;">
+              White
+            </span>
+          </a>
+        </li>
+      
+        <!--第四个产品项 -->
+        <li class="w3-padding-16">
+          <a href="https://item.taobao.com/item.htm?abbucket=1&id=861874925228&ns=1&priceTId=2100c80217429644737291648e0c77&skuId=5682716245424&spm=a21n57.1.hoverItem.5&utparam=%7B%22aplus_abtest%22%3A%22bb701303d0095a00af26d06cc25b5a53%22%7D&xxc=taobaoSearch" 
+             class="w3-hover-light-grey" 
+             style="text-decoration: none; display: block; padding: 16px; cursor: pointer;">
+            <img src="Simages/s11.png" alt="Slip Shorts" 
+                 class="w3-left w3-margin-right w3-sepia" 
+                 style="width:50px">
+            <span class="w3-large" 
+                  style="font-family: 'Raleway', sans-serif; font-weight: 600;">
+              Slip Shorts
+            </span>
+            <br>
+            <span style="font-family: 'Raleway', sans-serif;">
+              S / XS
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4 style="font-family: 'Montserrat', sans-serif;">Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <!-- 使用本地视频 -->
+            <video width="100%" height="200px" controls>
+              <source src="video/ss0.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4 style="font-family: 'Montserrat', sans-serif;">Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+            <div class="w3-col s6">
+                <p><a href="https://www.xiaohongshu.com/discovery/item/6720d152000000003c01f222?source=webshare&xhsshare=pc_web&xsec_token=ABwCFQIC32cVkZrwm21JAYmC2l7p0l4-gp0ldlQdkzdyg=&xsec_source=pc_share" target="_blank"><img src="Simages/s12.jpg" alt="insp" width="235" height="auto"></a></p>
+                <p><a href="https://www.xiaohongshu.com/discovery/item/6711d422000000001602212f?source=webshare&xhsshare=pc_web&xsec_token=ABeAxlyu7fCAxqT1yxQH6hhzezp7UWhHOzhryXAvy3PvY=&xsec_source=pc_share" target="_blank"><img src="Simages/s13.jpg" alt="insp" width="235" height="auto"></a></p>
+            </div>
+            <div class="w3-col s6">
+                <p><a href="https://www.xiaohongshu.com/discovery/item/67299555000000003c01d67c?source=webshare&xhsshare=pc_web&xsec_token=ABISsi-NbqHgx82gbGV_nIiYsXpm3Xj-wNOybEfL69id8=&xsec_source=pc_share" target="_blank"><img src="Simages/s14.jpg" alt="insp" width="235" height="auto"></a></p>
+                <p><a href="https://www.xiaohongshu.com/discovery/item/67318388000000001a037a83?source=webshare&xhsshare=pc_web&xsec_token=ABo3hr0lpzmZCFKpWl_aznEHj-o-vekvq2OMJpWZTjlhM=&xsec_source=pc_share" target="_blank"><img src="Simages/s15.jpg" alt="insp" width="235" height="auto"></a></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+      <!-- Follow Us -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4 style="font-family: 'Montserrat', sans-serif;">Follow Us</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+            <a href="https://weibo.com/u/7942524104" target="_blank">
+                <i class="fa fa-weibo w3-hover-opacity"></i>
+            </a>
+            <a href="https://46k8vk28h1cx7mdvb180oo3bsivxxen.world.taobao.com/shop/view_shop.htm?appUid=RAzN8HWQaEtZAyAD9PNB4G8CXGPaYV7juV74VzMEqFYXGQPkacr&spm=a21n57.1.hoverItem.2" target="_blank">
+                <i class="fa fa-shopping-bag w3-hover-opacity"></i>
+            </a>
+            <a href="https://www.xiaohongshu.com/user/profile/6075d0a3000000000101fffc?xsec_token=ABU3tsaWJwvVRBh7D13OYGf6HHpAhaw7mZ_52G0uK4nwQ%3D&xsec_source=pc_search" target="_blank">
+              <i class="fa fa-heart w3-hover-opacity"></i>
+            </a>
+        </div>
+      </div>
+    <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 600;">Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+            <p style="font-family: 'Raleway', sans-serif;">Enter your e-mail below and get notified on the latest information about us.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%; font-family: 'Raleway', sans-serif;"></p>
+            <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red" style="font-family: 'Raleway', sans-serif;">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+      <div class="w3-container w3-white">
+          <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+          <h2 class="w3-wide" style="font-family: 'Montserrat', sans-serif; font-weight: 600;">SUBSCRIBE</h2>
+          <p style="font-family: 'Raleway', sans-serif;">Join my mailing list to receive updates on the latest fashion information and new launch items.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="font-family: 'Raleway', sans-serif;"></p>
+          <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'" style="font-family: 'Raleway', sans-serif;">Subscribe</button>
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">FILGood</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
